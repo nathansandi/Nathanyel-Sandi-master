@@ -1,0 +1,26 @@
+server:
+  port: ${PORT:9182}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://${DISCOVERY_HOST:localhost}:${DISCOVERY_PORT:8761}/eureka/}
+
+spring:
+  application:
+    name: loan-application-service
+  datasource:
+    url: jdbc:mysql://svama1.cfewahrbh0o7.eu-central-1.rds.amazonaws.com/svama?useSSL=false
+    username: admin
+    password: nathan123
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+      
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      hibernate.format-sql: true
+    show-sql: true
