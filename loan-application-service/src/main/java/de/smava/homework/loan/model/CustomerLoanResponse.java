@@ -1,8 +1,8 @@
 package de.smava.homework.loan.model;
 
 import java.util.ArrayList;
-import lombok.Value;
-@Value
+
+
 public class CustomerLoanResponse {
 	private CustomerResponse customer;
 	private ArrayList<LoanSearchResponse> loan;

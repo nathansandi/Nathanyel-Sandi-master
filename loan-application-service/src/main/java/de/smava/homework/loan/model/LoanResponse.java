@@ -1,8 +1,6 @@
 package de.smava.homework.loan.model;
 
-import lombok.Value;
 
-@Value
 public class LoanResponse {
 	
 	private String id;

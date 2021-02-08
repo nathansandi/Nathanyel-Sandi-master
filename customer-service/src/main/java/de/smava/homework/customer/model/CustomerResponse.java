@@ -1,8 +1,6 @@
 package de.smava.homework.customer.model;
 
-import lombok.Value;
 
-@Value
 public class CustomerResponse {
 	
 	private String id;
